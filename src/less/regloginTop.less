@@ -1,0 +1,58 @@
+// 定义全局变量
+@colorwhite:#fff;
+@colorblue:blue;
+
+// 重置顶部导航栏样式
+.navbar{
+    margin-bottom: 0px;
+    border-radius: 0px;
+}
+// 顶部导航
+.navbar-inverse{
+    .navbar-header{
+        .navbar-brand{
+            color: @colorwhite;
+            font-size: 24px;
+            font-style: italic;
+            span{
+                font-size: 16px;
+                margin-right: 6px;
+            }
+        }
+    }
+    .navbar-nav{
+        &>li{
+            &>a{
+                font-size: 16px;
+                color: @colorwhite;
+                &:hover{
+                   color: @colorblue; 
+                    text-decoration: underline;
+                }
+            }
+            .tooltip{
+                img{
+                    width: 90px;
+                }
+            }
+        }
+    }
+}
+// 主导航
+.navbar-default{
+    .navbar-brand{
+        &>img{
+            // line-height: 80px;
+            margin-top: 10px;
+        }
+    }
+    .title{
+        display: inline-block;
+        height: 80px;
+        line-height: 80px;
+        font-weight: bold;
+        font-size: 22px;
+        margin-left: 20px;
+        color: #337ab7;
+    }
+}

@@ -1,0 +1,105 @@
+
+// 引入头部样式
+@import url("header.less");
+
+// 三大特色
+.feature{
+    .row{
+        &>div{
+            background: url("../../../images/feature01.png") no-repeat;
+            height: 65px;
+            padding-left: 80px;
+            margin-top: 20px;
+            &>h3{
+              font-size: 18px;
+              font-weight: bold;
+              margin: 0px;
+              padding: 0px;  
+            }
+        }
+    }
+}
+
+// 投资信息
+.panel-default{
+    border: none;
+    margin-top: 20px;
+    .panel-heading{
+        background-color: transparent;
+        padding: 0px;
+        border: none;
+        border-bottom: 1px solid #ccc;
+        h2{
+            margin: 0;
+            font-size: 24px;
+            color: #2e8ece;
+            border-bottom: 3px solid;
+            padding: 10px 0;
+            font-weight: bold;
+        }
+        a{
+            margin-top: 20px;
+        }
+        color: #999999
+    }
+
+    // .panel-body{   //新闻文章
+    //     padding: 10px 0;
+    //     ul{
+    //         padding: 0;
+    //         list-style: none;
+    //         li{
+    //             padding: 0;
+    //             line-height: 38px;
+    //             font-size: 14px;
+    //             border-bottom: 1px dotted #ccc;
+    //             a{
+    //                 color: #555;
+    //                 &:hover{
+    //                     color: @colorblue;
+    //                     text-decoration: none;
+    //                 }
+    //             }
+    //         }
+    //     }
+    // }
+}
+//新闻文章
+.panel-default{
+    .panel-body{   
+        padding: 10px 0;
+        ul{
+            padding: 0;
+            list-style: none;
+            li{
+                padding: 0;
+                line-height: 38px;
+                font-size: 14px;
+                border-bottom: 1px dotted #ccc;
+                a{
+                    color: #555;
+                    &:hover{
+                        color: @colorblue;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    } 
+}
+.panel {
+    box-shadow: none;
+    border: none;
+    margin-bottom: 0;
+}
+
+// 引入页脚样式
+@import url("footer");
+
+
+//解决小屏的版面错乱问题(投资信息)
+@media all and (max-width:520px){
+    .hideTitle{
+        display: none;
+    }
+}
